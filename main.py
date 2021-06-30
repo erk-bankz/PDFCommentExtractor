@@ -18,7 +18,7 @@ class Dialog(QDialog, Ui_Dialog):
         super(Dialog, self).__init__(parent)
         self.setupUi(self)
         self.buttonBox.accepted.connect(self.buttonClicked)  # alternative way to call your method
-        #testgit
+
     def buttonClicked(self):
         pdf_path = Path(self.pdfPath.text())
         counter = 1
